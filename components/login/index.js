@@ -57,9 +57,9 @@ function MyApp() {
           >
             Login to your account
           </p>
-          <p className="text-sm mt-4 font-medium leading-none text-gray-500">
-            Dont have account?{" "}
-            <a href="/signUp">
+          <a href="/signUp">
+            <p className="text-sm mt-4 font-medium leading-none text-gray-500">
+              Dont have account?{" "}
               <span
                 tabIndex={0}
                 role="link"
@@ -69,8 +69,8 @@ function MyApp() {
                 {" "}
                 Sign up here
               </span>
-            </a>
-          </p>
+            </p>
+          </a>
           <form id="loginForm" onSubmit={submit}>
             <div className="mt-12 w-full px-8 sm:px-0 lg:px-0">
               <div className="flex flex-col mt-5">
