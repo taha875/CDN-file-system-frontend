@@ -46,12 +46,11 @@ function MyApp() {
           "user",
           JSON.stringify({ email: res.data.response.user.email })
         );
-        Router.push("/");
-        console.log(localStorage.user, "Localstorage");
       })
       .catch(function (error) {
         console.log(error);
       });
+    Router.push("/login");
   };
   return (
     <div className="h-screen bg-gradient-to-tl from-green-400 to-indigo-900 w-full py-16 px-4">
@@ -65,7 +64,7 @@ function MyApp() {
           >
             Aready have an account
           </p>
-          <a href="/">
+          <a href="/login">
             <p className="text-sm mt-4 font-medium leading-none text-gray-500">
               Dont have account?{" "}
               <span
